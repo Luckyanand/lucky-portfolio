@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lucky A | Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#0f172a;
+    color:#fff;
+}
+
+/* NAVBAR */
+nav{
+    display:flex;
+    justify-content:space-between;
+    padding:20px 10%;
+    background:rgba(255,255,255,0.05);
+    backdrop-filter:blur(10px);
+    position:sticky;
+    top:0;
+}
+
+nav h2{
+    color:#38bdf8;
+}
+
+nav a{
+    color:white;
+    margin-left:20px;
+    text-decoration:none;
+}
+
+/* HERO */
+.hero{
+    height:90vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.hero h1{
+    font-size:50px;
+}
+
+.hero span{
+    color:#38bdf8;
+}
+
+.hero p{
+    margin-top:15px;
+    max-width:600px;
+    color:#cbd5f5;
+}
+
+.btn{
+    margin-top:20px;
+    padding:12px 25px;
+    background:#38bdf8;
+    border:none;
+    color:black;
+    cursor:pointer;
+    border-radius:30px;
+}
+
+/* SECTION */
+section{
+    padding:60px 10%;
+}
+
+/* CARDS */
+.card{
+    background:rgba(255,255,255,0.05);
+    padding:20px;
+    border-radius:15px;
+    margin-top:20px;
+    backdrop-filter:blur(10px);
+}
+
+/* SKILLS */
+.skill{
+    margin:15px 0;
+}
+
+.bar{
+    height:8px;
+    background:#1e293b;
+    border-radius:10px;
+}
+
+.fill{
+    height:8px;
+    background:#38bdf8;
+    border-radius:10px;
+}
+
+/* TIMELINE */
+.timeline{
+    border-left:2px solid #38bdf8;
+    padding-left:20px;
+}
+
+.timeline-item{
+    margin-bottom:20px;
+}
+
+/* FOOTER */
+footer{
+    text-align:center;
+    padding:20px;
+    background:#020617;
+    color:#94a3b8;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <h2>Lucky A</h2>
+    <div>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+    </div>
+</nav>
+
+<div class="hero">
+    <h1>Hi, I'm <span>Lucky A</span></h1>
+    <h3>Digital Marketing Executive</h3>
+    <p>Results-driven marketer with 4+ years of experience in SEO, Paid Ads, and lead generation.</p>
+    <button class="btn">Contact Me</button>
+</div>
+
+<section id="about">
+    <h2>About Me</h2>
+    <div class="card">
+        <p>
+            I specialize in Google Ads, SEO, and multi-channel marketing strategies.
+            I have successfully managed campaigns, generated leads, and improved ROI
+            through data-driven optimization.
+        </p>
+    </div>
+</section>
+
+<section id="skills">
+    <h2>Skills</h2>
+
+    <div class="skill">
+        Google Ads
+        <div class="bar"><div class="fill" style="width:90%"></div></div>
+    </div>
+
+    <div class="skill">
+        SEO
+        <div class="bar"><div class="fill" style="width:85%"></div></div>
+    </div>
+
+    <div class="skill">
+        Facebook Ads
+        <div class="bar"><div class="fill" style="width:80%"></div></div>
+    </div>
+
+    <div class="skill">
+        Content Writing
+        <div class="bar"><div class="fill" style="width:75%"></div></div>
+    </div>
+</section>
+
+<section id="experience">
+    <h2>Experience</h2>
+
+    <div class="timeline">
+
+        <div class="timeline-item">
+            <h3>RedPlanet Spatial Solutions</h3>
+            <p>Digital Marketing Executive - 2 (2024 - Present)</p>
+            <p>Handled SEO, Google Ads, LinkedIn marketing, and automation tools.</p>
+        </div>
+
+        <div class="timeline-item">
+            <h3>Fuji Electric India</h3>
+            <p>Digital Marketing Executive (2023 - 2024)</p>
+            <p>Managed PPC campaigns and optimized website using analytics tools.</p>
+        </div>
+
+        <div class="timeline-item">
+            <h3>My Medical Shop</h3>
+            <p>Digital Marketing Executive (2022 - 2023)</p>
+            <p>Achieved 50K+ app installs using Google Ads.</p>
+        </div>
+
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact</h2>
+
+    <div class="card">
+        <p>Email: luckysanands@gmail.com</p>
+        <p>Phone: +91 6382500556</p>
+        <p>Location: Chennai</p>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Lucky A | Portfolio</p>
+</footer>
+
+</body>
+</html>
