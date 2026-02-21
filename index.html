@@ -6,194 +6,78 @@
 <title>Lucky A | Portfolio</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-
-<style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;}
-body{background:#0f172a;color:white;scroll-behavior:smooth}
-
-/* NAV */
-nav{
-display:flex;justify-content:space-between;
-padding:20px 10%;background:#020617;position:sticky;top:0;z-index:1000;
-}
-nav a{color:white;margin-left:20px;text-decoration:none}
-
-/* HERO */
-.hero{
-    min-height: 70vh;
-    padding: 80px 20px 40px;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
-}
-
-/* SECTION */
-section{padding:60px 10%}
-
-/* CARD */
-.card{
-background:rgba(255,255,255,0.05);
-padding:20px;border-radius:15px;margin-top:20px;
-transition:0.3s;
-}
-.card:hover{transform:translateY(-5px)}
-
-/* PROJECT GRID */
-.grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:20px;
-}
-
-/* SKILLS */
-.bar{height:8px;background:#1e293b;border-radius:10px}
-.fill{height:8px;background:#38bdf8;border-radius:10px}
-
-/* METRICS */
-.metrics{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
-gap:20px;
-text-align:center;
-}
-.metric h2{color:#38bdf8}
-
-/* WHATSAPP */
-.whatsapp{
-position:fixed;bottom:20px;right:20px;
-background:#25D366;color:white;
-padding:15px;border-radius:50%;
-text-decoration:none;font-size:20px;
-}
-
-/* FOOTER */
-footer{text-align:center;padding:20px;background:#020617}
-</style>
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<nav>
-<h2>Lucky A</h2>
-<div>
-<a href="#about">About</a>
-<a href="#projects">Projects</a>
-<a href="#case">Case Studies</a>
-<a href="#contact">Contact</a>
-</div>
-</nav>
+<!-- NAVBAR -->
+<header>
+  <h2 class="logo">Lucky A</h2>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
 
 <!-- HERO -->
-<div class="hero">
-<h1>Hi, I'm Lucky A</h1>
-<h2 class="typing"></h2>
-<p>Digital Marketing Expert | SEO | Paid Ads | Lead Generation</p>
-
-<a href="Lucky_Resume.pdf" download>
-<button class="btn">Download Resume</button>
-</a>
-</div>
+<section id="home" class="hero">
+  <h1>Hi, I'm Lucky 👋</h1>
+  <p>Frontend Developer | Designer</p>
+  <button onclick="scrollToSection('contact')">Hire Me</button>
+</section>
 
 <!-- ABOUT -->
 <section id="about">
-<h2>About Me</h2>
-<div class="card">
-<p>4+ years experience in digital marketing with expertise in Google Ads, SEO, and multi-channel campaigns. Proven track record of improving ROI and generating leads.</p>
-</div>
+  <h2>About Me</h2>
+  <p>
+    I am a passionate web developer who loves building modern and responsive websites.
+  </p>
 </section>
 
-<!-- METRICS -->
-<section>
-<h2>Campaign Results</h2>
-<div class="metrics">
-<div class="card metric"><h2>50K+</h2><p>App Installs</p></div>
-<div class="card metric"><h2>4+ Years</h2><p>Experience</p></div>
-<div class="card metric"><h2>100+</h2><p>Campaigns</p></div>
-<div class="card metric"><h2>High ROI</h2><p>Performance</p></div>
-</div>
+<!-- SKILLS -->
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="skills-container">
+    <span>HTML</span>
+    <span>CSS</span>
+    <span>JavaScript</span>
+    <span>React</span>
+  </div>
 </section>
 
 <!-- PROJECTS -->
 <section id="projects">
-<h2>Projects</h2>
-<div class="grid">
+  <h2>Projects</h2>
 
-<div class="card">
-<h3>Lead Generation Campaign</h3>
-<p>Generated high-quality B2B leads using Google Ads + LinkedIn.</p>
-</div>
+  <div class="project-card">
+    <h3>Portfolio Website</h3>
+    <p>A modern responsive portfolio website.</p>
+  </div>
 
-<div class="card">
-<h3>SEO Growth Project</h3>
-<p>Improved organic traffic using keyword optimization & content.</p>
-</div>
-
-<div class="card">
-<h3>Social Media Campaign</h3>
-<p>Managed Instagram & Facebook ads for engagement growth.</p>
-</div>
-
-</div>
-</section>
-
-<!-- CASE STUDIES -->
-<section id="case">
-<h2>SEO Case Studies</h2>
-
-<div class="card">
-<h3>🚀 50K App Installs</h3>
-<p>Achieved 50,000+ installs using optimized Google Ads strategy.</p>
-</div>
-
-<div class="card">
-<h3>📈 LinkedIn Growth</h3>
-<p>Expanded company presence through targeted content strategy.</p>
-</div>
+  <div class="project-card">
+    <h3>Landing Page</h3>
+    <p>Clean UI landing page design.</p>
+  </div>
 
 </section>
 
 <!-- CONTACT -->
 <section id="contact">
-<h2>Contact</h2>
-<div class="card">
-<p>Email: luckysanands@gmail.com</p>
-<p>Phone: +91 6382500556</p>
-<p>Location: Chennai</p>
-</div>
+  <h2>Contact Me</h2>
+  <input type="text" placeholder="Your Name">
+  <input type="email" placeholder="Your Email">
+  <textarea placeholder="Your Message"></textarea>
+  <button>Send</button>
 </section>
 
-<!-- WHATSAPP -->
-<a href="https://wa.me/916382500556" class="whatsapp">💬</a>
-
 <footer>
-<p>© 2026 Lucky A Portfolio</p>
+  <p>© 2026 Lucky A</p>
 </footer>
 
-<!-- TYPING SCRIPT -->
-<script>
-const text = ["SEO Specialist","Google Ads Expert","Digital Marketer"];
-let i=0,j=0,current="",isDeleting=false;
-
-function type(){
-current=text[i];
-document.querySelector(".typing").textContent=current.substring(0,j);
-
-if(!isDeleting && j<current.length){
-j++;
-setTimeout(type,100);
-}else if(isDeleting && j>0){
-j--;
-setTimeout(type,50);
-}else{
-isDeleting=!isDeleting;
-if(!isDeleting){i=(i+1)%text.length;}
-setTimeout(type,1000);
-}
-}
-type();
-</script>
-
+<script src="script.js"></script>
 </body>
 </html>
