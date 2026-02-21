@@ -1,0 +1,102 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins',sans-serif;
+}
+
+body{
+  background:#0f172a;
+  color:#fff;
+}
+
+/* NAVBAR */
+header{
+  display:flex;
+  justify-content:space-between;
+  padding:20px 50px;
+  background:#020617;
+  position:sticky;
+  top:0;
+}
+
+nav a{
+  margin-left:20px;
+  color:#fff;
+  text-decoration:none;
+}
+
+nav a:hover{
+  color:#38bdf8;
+}
+
+/* HERO */
+.hero{
+  height:100vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+}
+
+.hero h1{
+  font-size:3rem;
+}
+
+.hero button{
+  margin-top:20px;
+  padding:10px 20px;
+  background:#38bdf8;
+  border:none;
+  color:#000;
+  cursor:pointer;
+  border-radius:5px;
+}
+
+/* SECTIONS */
+section{
+  padding:80px 50px;
+  text-align:center;
+}
+
+/* SKILLS */
+.skills-container span{
+  display:inline-block;
+  margin:10px;
+  padding:10px 20px;
+  background:#1e293b;
+  border-radius:20px;
+}
+
+/* PROJECTS */
+.project-card{
+  background:#1e293b;
+  padding:20px;
+  margin:20px;
+  border-radius:10px;
+}
+
+/* CONTACT */
+input, textarea{
+  width:80%;
+  margin:10px;
+  padding:10px;
+  border:none;
+  border-radius:5px;
+}
+
+button{
+  padding:10px 20px;
+  background:#38bdf8;
+  border:none;
+  cursor:pointer;
+  border-radius:5px;
+}
+
+/* FOOTER */
+footer{
+  text-align:center;
+  padding:20px;
+  background:#020617;
+}
